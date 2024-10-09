@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerimage"
+        android:src="@drawable/rock"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:id="@+id/playertext"
+        android:layout_below="@+id/playerimage"
+        android:text="player text"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oppimage"
+        android:src="@drawable/rock"
+        android:gravity="center"
+        android:layout_below="@id/playertext"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:id="@+id/opptext"
+        android:layout_below="@+id/oppimage"
+        android:text="opponent text"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/resulttext"
+        android:layout_below="@+id/opptext"
+        android:text="default text ahaha"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resulttext"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rockbutton"
+            android:text="Rock"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paperbutton"
+            android:text="Paper"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scissorsbutton"
+            android:text="Scissors"
+            android:textSize="25sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
